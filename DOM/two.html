@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="bg-black">
+
+    
+    <div >
+        <h1  id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="" id="">
+
+/*              Finds the element whose id="title"
+        document.getElementById('title') add the dot and use many features like :-
+        document.getElementById('title').this and that 
+
+         we can also store that in one variable called the title  that not only used as the storing material 
+
+         const title = document.getElementById('title')  // from next time onwards u can directly title.something 
+
+        ------  Gives the same till we  have not used the span and all if we will use 
+         title.innertext           Only visible text
+         title.innerHTML            ✔ Returns HTML + text
+         title.textContent          DOM learning on Chai aur code test text         Shows ALL text
+
+         VS Code / browser gives you:
+
+.innerText
+.innerHTML
+.textContent
+.style
+.classList
+.getAttribute()
+.setAttribute()
+👉 This is DOM power
+
+    */    
+/*
+             these selector are used as same as we usesd it in  the css
+        document.querySelector('h2') --> it will give u the first h2 in this 
+        document.querySelector('.class')
+        document.querySelector('.heading')
+        document.querySelector('#title')
+         document.querySelector('ul')
+
+*/
+
+/*
+nodelist is not the array  ---  so wha pr for each loop lgana kyuki vo array nhi hai to wha pr map nhi laga sakte 
+
+*/
+
+
+/*
+How to convert the HTML collection into the array 
+like we have the variable = tempClassList that stores all the html collection 
+
+now converting this tempClassList into the array 
+Array.from(tempClassList)  =>  mtlb array me kaha se 
+
+
+const myConvertedArray = Array.from(tempClassList)
+
+ myConvertedArray.forEach(function(li){
+    li.style.color='orange'
+ })
+*/
+
+
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
+</body>
+</html>
